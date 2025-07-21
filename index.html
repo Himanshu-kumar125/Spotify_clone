@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <i class="fab fa-spotify"></i>
+                <span>Spotify</span>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li class="active">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-search"></i>
+                        <span>Search</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-list"></i>
+                        <span>Your Library</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="playlist-section">
+                <div class="create-playlist">
+                    <i class="fas fa-plus"></i>
+                    <span>Create Playlist</span>
+                </div>
+                <div class="liked-songs">
+                    <i class="fas fa-heart"></i>
+                    <span>Liked Songs</span>
+                </div>
+            </div>
+
+            <div class="playlists">
+                <div class="playlist-item">My Playlist #1</div>
+                <div class="playlist-item">Chill Vibes</div>
+                <div class="playlist-item">Workout Mix</div>
+                <div class="playlist-item">Road Trip</div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header class="top-bar">
+                <div class="nav-buttons">
+                    <button class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="user-profile">
+                    <button class="profile-btn">
+                        <i class="fas fa-user-circle"></i>
+                        <span>User</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="content">
+                <section class="greeting">
+                    <h1>Good evening</h1>
+                </section>
+
+                <section class="recently-played">
+                    <div class="section-header">
+                        <h2>Recently played</h2>
+                        <a href="#" class="show-all">Show all</a>
+                    </div>
+                    <div class="card-grid">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="chiil.jpeg" alt="Liked Songs">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                            <h3>Liked Songs</h3>
+                            <p>64 songs</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="chiil.jpeg" alt="Chill Mix">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                            <h3>Chill Mix</h3>
+                            <p>Made for you</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="chiil.jpeg" alt="Daily Mix 1">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                            <h3>Daily Mix 1</h3>
+                            <p>Made for you</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="chiil.jpeg" alt="Discover Weekly">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                            <h3>Discover Weekly</h3>
+                            <p>Made for you</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="made-for-you">
+                    <div class="section-header">
+                        <h2>Made for you</h2>
+                        <a href="#" class="show-all">Show all</a>
+                    </div>
+                    <div class="card-grid">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="chiil.jpeg" alt="Release Radar">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                            <h3>Release Radar</h3>
+                            <p>Catch all the latest music from artists you follow</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="chiil.jpeg" alt="Daily Mix 2">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                            <h3>Daily Mix 2</h3>
+                            <p>Ed Sheeran, Coldplay, Maroon 5 and more</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="chiil.jpeg" alt="Daily Mix 3">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                            <h3>Daily Mix 3</h3>
+                            <p>The Weeknd, Dua Lipa, Ariana Grande and more</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player">
+        <div class="player-left">
+            <div class="current-song">
+                <img src="chiil.jpeg" alt="Current Song" class="song-image">
+                <div class="song-info">
+                    <div class="song-title">Blinding Lights</div>
+                    <div class="song-artist">The Weeknd</div>
+                </div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+        </div>
+
+        <div class="player-center">
+            <div class="player-controls">
+                <button class="control-btn"><i class="fas fa-random"></i></button>
+                <button class="control-btn"><i class="fas fa-step-backward"></i></button>
+                <button class="control-btn play-pause-btn" id="playPauseBtn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="control-btn"><i class="fas fa-step-forward"></i></button>
+                <button class="control-btn"><i class="fas fa-redo"></i></button>
+            </div>
+            <div class="progress-bar">
+                <span class="time-current">1:23</span>
+                <div class="progress-container">
+                    <div class="progress" id="progress"></div>
+                    <div class="progress-handle" id="progressHandle"></div>
+                </div>
+                <span class="time-total">3:45</span>
+            </div>
+        </div>
+
+        <div class="player-right">
+            <button class="control-btn"><i class="fas fa-list"></i></button>
+            <button class="control-btn"><i class="fas fa-desktop"></i></button>
+            <div class="volume-control">
+                <button class="control-btn"><i class="fas fa-volume-up"></i></button>
+                <div class="volume-bar">
+                    <div class="volume-progress" id="volumeProgress"></div>
+                    <div class="volume-handle" id="volumeHandle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
